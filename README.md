@@ -3,9 +3,11 @@
 
 ###How to test
 
-- `npm install`
+`npm install`
+
 If you make any changes in the `src` directory, run:
-- `webpack && webpack --config webpack.example.config.js`
+
+`webpack && webpack --config webpack.example.config.js`
 
 ###Description
 
