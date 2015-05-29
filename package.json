@@ -1,8 +1,8 @@
 {
   "name": "react-slug",
   "description": "A component for entering a url-friendly slug",
-  "version": "0.0.2",
-  "main": "./dist/react-slug.js",
+  "version": "0.0.3",
+  "main": "./build/react-slug.js",
   "directories": {
     "example": "example"
   },
