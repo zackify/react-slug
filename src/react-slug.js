@@ -17,8 +17,11 @@ export default class Slug extends React.Component{
 
   handleChange(event){
     let value = this.slugify(event.target.value)
+    var modifedEvent = event
+    modifedEvent.target.value = value
+    
     this.setState({value})
-    if(this.props.onChange) this.props.onChange(value,event)
+    if(this.props.onChange) this.props.onChange(modifedEvent)
   }
 
   render(){

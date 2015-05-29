@@ -45,8 +45,11 @@ var Slug = (function (_React$Component) {
     key: 'handleChange',
     value: function handleChange(event) {
       var value = this.slugify(event.target.value);
+      var modifedEvent = event;
+      modifedEvent.target.value = value;
+
       this.setState({ value: value });
-      if (this.props.onChange) this.props.onChange(value, event);
+      if (this.props.onChange) this.props.onChange(modifedEvent);
     }
   }, {
     key: 'render',

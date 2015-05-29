@@ -7,7 +7,7 @@
 
 ##Example
 
-It acts exactly the same as a regular input, the onChange will return the new value and the event as a second parameter.
+It acts exactly the same as a regular input, the onChange will return the event as a second parameter.
 
 ~~~js
 
@@ -21,8 +21,8 @@ export default class App extends React.Component{
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(value, event){
-    console.log(value)
+  handleChange(event){
+    console.log(event.target.value)
   }
 
   render(){
