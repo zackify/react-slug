@@ -1,17 +1,23 @@
 ##React Slug
 ![gif demo](https://s3.amazonaws.com/f.cl.ly/items/2N330o430g3g2s2e0S0E/Screen%20Recording%202015-02-27%20at%2005.02%20PM.gif)
 
-###How to test
+###Install
 
-`npm install`
+`npm install react-slug`
 
-If you make any changes in the `src` directory, run:
+##Component
 
-`webpack && webpack --config webpack.example.config.js`
+It acts exactly the same as a regular input, the onChange will return the new value and the event as a second parameter.
+
+  <Slug value="this will be stringified" onChange={this.handleChange} className="test" />
+
+##Rebuilding
+  
+  Run this to view the example in `example/dist`
+
+  npm run build
 
 ###Description
 
-This is a super simple react component that will strip any non alpha-numeric characters for you. It will turn spaces into hypens. 
-This is my first real react component I've published, so please let me know if you have any suggestions! 
-Try typing something like an quetion mark, it won't appear. That goes for anything other than a space, which gets converted into a hypen.
-You can rebuild the component with just `webpack` and rebuild the example by doing `webpack --config webpack.example.config.js`
+This is a super simple react component that will strip any non alpha-numeric characters for you. It will turn spaces into hyphens. 
+Thanks to [Jed Watson](http://github.com/jedwatson) for the gulpfile stuff ;)

@@ -1,11 +1,38 @@
 {
-  "dependencies": {
-    "jsx-loader": "^0.12.2",
-    "lodash": "^3.3.1",
-    "react": "^0.12.2",
-    "webpack": "^1.6.0"
+  "name": "react-slug",
+  "description": "A component for entering a url-friendly slug",
+  "version": "0.0.2",
+  "main": "./dist/react-slug.js",
+  "directories": {
+    "example": "example"
   },
   "scripts": {
-    "build": "webpack && webpack --config webpack.example.config.js"
+    "build": "gulp clean && NODE_ENV=production gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zackify/react-slug.git"
+  },
+  "keywords": [
+    "reactjs",
+    "slug",
+    "input",
+    "component"
+  ],
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "author": "Zach Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackify/react-slug/issues"
+  },
+  "devDependencies": {
+    "react-component-gulp-tasks": "^0.7.0",
+    "gulp": "^3.8.11"
+  },
+  "homepage": "https://github.com/zackify/react-slug",
+  "dependencies": {
+    "react": "^0.13.3"
   }
 }
