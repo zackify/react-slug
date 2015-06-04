@@ -26,7 +26,7 @@ export default class App extends React.Component{
   }
 
   render(){
-    return <Slug value="this will be stringified" onChange={this.handleChange} className="test" />
+    return <Slug value="this will be slugified" onChange={this.handleChange} className="test" />
   }
 }
 
